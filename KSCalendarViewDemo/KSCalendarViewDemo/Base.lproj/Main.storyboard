@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00年00月00日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-Fp-12D">
+                                <rect key="frame" x="16" y="20" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SQQ-y5-WLo"/>
+                                    <constraint firstAttribute="width" priority="250" constant="72" id="sha-tv-JBs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00年00月00日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u6-8X-I60">
+                                <rect key="frame" x="245" y="20" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8hn-dR-AZa"/>
+                                    <constraint firstAttribute="width" priority="250" constant="80" id="GM6-cO-KZU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-zM-mzF">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="4lc-lG-uxw"/>
+                                    <constraint firstAttribute="height" constant="30" id="yn0-S9-7vD"/>
+                                </constraints>
+                                <state key="normal" title="上一年"/>
+                                <connections>
+                                    <action selector="lastYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRE-rg-glc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vf-vI-7Vp">
+                                <rect key="frame" x="313" y="561" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="69e-60-GJn"/>
+                                    <constraint firstAttribute="width" constant="46" id="8cm-t9-tvM"/>
+                                </constraints>
+                                <state key="normal" title="下一月"/>
+                                <connections>
+                                    <action selector="nextMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nu0-Hr-wjU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-ij-egg">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Rtd-gO-Cbg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Sc5-rg-5TO"/>
+                                </constraints>
+                                <state key="normal" title="下一年"/>
+                                <connections>
+                                    <action selector="nextYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDi-PV-FfW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-vB-s3l">
+                                <rect key="frame" x="16" y="561" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rx9-Rk-one"/>
+                                    <constraint firstAttribute="width" constant="46" id="ZSW-QV-89t"/>
+                                </constraints>
+                                <state key="normal" title="上一月"/>
+                                <connections>
+                                    <action selector="lastMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hW8-rg-D9J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dbj-ij-egg" secondAttribute="bottom" constant="20" id="5Tc-So-arZ"/>
+                            <constraint firstItem="YsD-zM-mzF" firstAttribute="top" secondItem="HbG-vB-s3l" secondAttribute="bottom" constant="26" id="Amf-an-Ef8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YsD-zM-mzF" secondAttribute="bottom" constant="20" id="L8f-rw-9J1"/>
+                            <constraint firstItem="6u6-8X-I60" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PdY-6y-NLL"/>
+                            <constraint firstAttribute="trailing" secondItem="Dbj-ij-egg" secondAttribute="trailing" constant="16" id="Uxc-Tx-BqK"/>
+                            <constraint firstItem="Dbj-ij-egg" firstAttribute="top" secondItem="8vf-vI-7Vp" secondAttribute="bottom" constant="26" id="XdG-sW-hZn"/>
+                            <constraint firstItem="YsD-zM-mzF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZHt-gS-gIB"/>
+                            <constraint firstItem="GKd-Fp-12D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d1I-7l-QvT"/>
+                            <constraint firstItem="8vf-vI-7Vp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gI7-0G-iUn"/>
+                            <constraint firstItem="GKd-Fp-12D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lk9-nW-Inz"/>
+                            <constraint firstItem="HbG-vB-s3l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nFp-32-E8i"/>
+                            <constraint firstItem="6u6-8X-I60" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uAb-AV-a8B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="GKd-Fp-12D" id="gkD-SW-aFq"/>
+                        <outlet property="label2" destination="6u6-8X-I60" id="6fO-ft-V69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
